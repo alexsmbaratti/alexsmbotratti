@@ -1,6 +1,8 @@
 # alexsmbotratti
 A simple Discord Bot used for testing features and regulating a server.
 
+[Add to Discord](https://discordapp.com/oauth2/authorize?client_id=322245887789367306&permissions=0&scope=bot)
+
 ## Features
 - Test embeds
 - Host IP
