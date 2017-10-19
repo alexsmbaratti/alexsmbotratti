@@ -26,3 +26,7 @@ This is a bot that takes the hit for other bots I work on, so I can't say I know
 - Automagically sort humans that join the server from bots that join the Bot Testing Server and automatically create roles and channels for each bot with appropiate permissions.
 - Maybe some fun minigames?
 - Make this bot public for some reason?
+
+## Want to make your own Discord Bot?
+Check out [the gist I made](https://gist.github.com/alexsmbaratti/cbf5edaec6c36a38abbc631ae0f75831) for Discord.js!
+
