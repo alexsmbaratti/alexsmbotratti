@@ -21,6 +21,9 @@ For full functionality, run with `node app.js [IP Address] [PLATFORM]`
 
 `[IP Address]` should be replaced with `$(hostname -I)` on Linux-based operating systems. This will automatically add the host IP. All IP addresses are redacted after five seconds to avoid security concerns.
 
+So, for example, on a Raspberry Pi running this bot, the following command would be used (after navigating to the project folder):
+ `node app.js $(hostname -I) Pi`
+
 ## Down the Road
 This is a bot that takes the hit for other bots I work on, so I can't say I know what features I want this bot to do. Here are some ideas I have.
 - Automagically sort humans that join the server from bots that join the Bot Testing Server and automatically create roles and channels for each bot with appropiate permissions.
