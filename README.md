@@ -1,5 +1,5 @@
 # alexsmbotratti
-A simple Discord Bot used for testing features and regulating a server.
+A simple Discord Bot used for testing features and regulating a server. If you are looking at this GitHub, it serves as a example/template for new Discord bots.
 
 [Add to Discord](https://discordapp.com/oauth2/authorize?client_id=322245887789367306&permissions=0&scope=bot)
 
@@ -28,6 +28,8 @@ So, for example, on a Raspberry Pi running this bot, the following command would
 This is a bot that takes the hit for other bots I work on, so I can't say I know what features I want this bot to do. Here are some ideas I have.
 - Automagically sort humans that join the server from bots that join the Bot Testing Server and automatically create roles and channels for each bot with appropiate permissions.
 - Maybe some fun minigames?
+- Music Player
+- JSON example
 - Make this bot public for some reason?
 
 ## Want to make your own Discord Bot?
