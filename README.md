@@ -18,6 +18,7 @@ For full functionality, run with `node app.js [IP Address] [PLATFORM]`
 - Use `Pi` for Raspberry Pi
 - Use `macOS` for macOS
 - Use `AWS` for Amazon Web Services
+- For any other platform, just type whatever you want (remove any spaces in the platform's name)
 
 `[IP Address]` should be replaced with `$(hostname -I)` on Linux-based operating systems. This will automatically add the host IP. All IP addresses are redacted after five seconds to avoid security concerns.
 
