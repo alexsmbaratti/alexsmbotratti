@@ -33,5 +33,5 @@ This is a bot that takes the hit for other bots I work on, so I can't say I know
 - Make this bot public for some reason?
 
 ## Want to make your own Discord Bot?
-Check out [the gist I made](https://gist.github.com/alexsmbaratti/cbf5edaec6c36a38abbc631ae0f75831) for Discord.js!
+Check out [the repository I made](https://github.com/alexsmbaratti/Discord.js-Template) for Discord.js!
 
