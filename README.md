@@ -1,5 +1,5 @@
 # alexsmbotratti
-A simple Discord Bot used for testing features and regulating a server. If you are looking at this GitHub, it serves as a example/template for new Discord bots.
+A simple Discord Bot used for testing features and regulating a server. If you are looking at this GitHub, it serves as a example for basic Discord bots. Looking for a template? Check out my [template bot](https://github.com/alexsmbaratti/Discord.js-Template).
 
 [Add to Discord](https://discordapp.com/oauth2/authorize?client_id=322245887789367306&permissions=0&scope=bot)
 
