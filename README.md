@@ -33,6 +33,7 @@ This is a bot that takes the hit for other bots I work on, so I can't say I know
 - Music Player
 - JSON example
 - Make this bot public for some reason?
+- Give some fun facts about me?
 
 ## Want to make your own Discord Bot?
 Check out [the repository I made](https://github.com/alexsmbaratti/Discord.js-Template) for Discord.js!
