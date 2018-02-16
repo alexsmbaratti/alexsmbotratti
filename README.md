@@ -12,6 +12,8 @@ A simple Discord Bot used for testing features and regulating a server. If you a
 
 In the end, this bot just works as a quick way for me to test scripts in Node.js pertaining to Discord.js. Think of it like a mostly blank canvas. It also works as a way for me to test new features for other bots without giving them downtime. See the diagram below.
 
+![alt text](misc/concept.png)
+
 ## Running
 Note that this is just a portfolio project and is not intended to be used by the public. *That being said...*
 
