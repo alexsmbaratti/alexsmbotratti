@@ -2,13 +2,15 @@
 
 ![alt text](https://img.shields.io/badge/maintenance-probable-green.svg "Maintenance") ![alt text](https://img.shields.io/badge/build-1.3.0-red.svg "Build") [![alt text](https://img.shields.io/badge/add%20to-Discord-7289DA.svg "Add to Discord")](https://discordapp.com/oauth2/authorize?client_id=322245887789367306&permissions=0&scope=bot)
 
-A simple Discord Bot used for testing features and regulating a server. If you are looking at this GitHub, it serves as a example for basic Discord bots. Looking for a template? Check out my [template bot](https://github.com/alexsmbaratti/Discord.js-Template).
+A simple Discord Bot used for testing features and regulating a server. If you are looking at this GitHub, it serves as a example for basic Discord bots. Looking for a template? Check out my [template bot](https://github.com/alexsmbaratti/Discord.js-Template). 
 
 ## Features
 - Test embeds
 - Host IP
 - Ping relay
 - A clever college pun for the game title
+
+In the end, this bot just works as a quick way for me to test scripts in Node.js pertaining to Discord.js. Think of it like a mostly blank canvas. It also works as a way for me to test new features for other bots without giving them downtime.
 
 ## Running
 Note that this is just a portfolio project and is not intended to be used by the public. *That being said...*
