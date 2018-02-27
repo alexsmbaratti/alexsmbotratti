@@ -15,7 +15,7 @@ In the end, this bot just works as a quick way for me to test scripts in Node.js
 ![alt text](misc/concept.png)
 
 ## Running
-Note that this is just a portfolio project and is not intended to be used by the public. *That being said...*
+Note that this is just a personal project and is not intended to be used by the public. *That being said...*
 
 For full functionality, run with `node app.js [IP Address] [PLATFORM]`
 
