@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 var config = require('./config.json');
 const client = new Discord.Client();
+const https = require("https");
+var fs = require("fs");
 
 const build = "1.3.0";
 var host_ip = "0.0.0.0";
@@ -98,12 +100,93 @@ client.on('message', msg => {
       case `build`:
         msg.channel.send("Build: `" + build + "`");
         break;
+      case `profile`:
+        var isBot = "A humanistic human with human-like features";
+        if (msg.author.bot) {
+          isBot = "A very humble bot";
+        }
+        msg.channel.send({
+          embed: {
+            author: {
+              name: msg.author.username + "'s Profile",
+              icon_url: msg.author.avatarURL
+            },
+            title: isBot,
+            fields: [{
+                name: "ID",
+                value: msg.author.id
+              },
+              {
+                name: "Highest Role",
+                value: msg.member.highestRole.name
+              }
+            ],
+            color: msg.member.displayColor
+          }
+        });
+        break;
       case `roles`:
         var roleArray = msg.guild.roles.array();
         for (var i = 1; i < roleArray.length; i++) {
           msg.channel.send(roleArray[i].name + ": " + roleArray[i].id);
           console.log(roleArray[i].name + ": " + roleArray[i].id);
         }
+        break;
+      case `help`:
+        msg.channel.send("**Command List**\nBasic command structure is `a![command]`. All commands are **not** case-sensitive.\n**Debug** - `ping`, `build`, `ip`, `embed`\n**Tools** - `profile`");
+        break;
+      case `tournament`:
+        const url =
+          "https://alexsmbaratti:" + config.CHALLONGE_KEY + "@api.challonge.com/v1/tournaments/i7za05pq.json";
+        https.get(url, res => {
+          res.setEncoding("utf8");
+          let body = "";
+          res.on("data", data => {
+            body += data;
+          });
+          res.on("end", () => {
+            body = JSON.parse(body);
+            console.log(body);
+            msg.channel.send({
+              embed: {
+                title: body.tournament.name,
+                url: body.tournament.full_challonge_url,
+                fields: [{
+                    name: "Participants",
+                    value: body.tournament.participants_count
+                  },
+                  {
+                    name: "Tournament Type",
+                    value: body.tournament.tournament_type
+                  }
+                ],
+                color: 0xFC5C1D,
+                footer: {
+                  text: "Powered by Challonge",
+                  icon_url: "https://1stopesports.com/uploads/monthly_2017_05/challonge.png.645efb3df2745589ca26820ab7f99b75.png"
+                }
+              }
+            });
+          });
+        });
+        break;
+      case 'winner':
+        msg.channel.send({
+          embed: {
+            title: msg.author.username,
+            description: "Tournament Winner",
+            thumbnail: msg.author.avatarURL,
+            fields: [{
+              name: "Final Round",
+              value: "3-2"
+            }],
+            color: 0xFC5C1D,
+            footer: {
+              text: "Powered by Challonge",
+              icon_url: "https://1stopesports.com/uploads/monthly_2017_05/challonge.png.645efb3df2745589ca26820ab7f99b75.png"
+            }
+          }
+        });
         break;
       case `ping`:
         let start = msg.createdTimestamp;
