@@ -1,0 +1,26 @@
+{
+  "name": "alexsmbotratti",
+  "version": "1.3.0",
+  "description": "Bot Testing Bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "alexsmbaratti",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexsmbaratti/alexsmbotratti.git"
+  },
+  "keywords": [
+    "Discord"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexsmbaratti/alexsmbotratti/issues"
+  },
+  "homepage": "https://github.com/alexsmbaratti/alexsmbotratti#readme"
+}
