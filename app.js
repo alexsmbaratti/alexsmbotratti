@@ -72,6 +72,10 @@ client.on('ready', () => {
       }
     });
   }
+  if (process.env.USER == "travis") {
+    console.log("Compilation successful! Exiting with code 0.")
+    process.exit(0);
+  }
 });
 
 client.on('message', msg => {
