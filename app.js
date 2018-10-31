@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const https = require("https");
 var fs = require("fs");
 
-const build = "1.3.0";
+const build = "1.4.0";
 var host_ip = "0.0.0.0";
 var platform = "undefined";
 var testChannel;
